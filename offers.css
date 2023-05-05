@@ -1,0 +1,103 @@
+/* section1 offers */
+
+.section-offers{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.video-offers h1{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-size:4em;
+    color:orange;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px #000, 0 0 18px #000;
+    text-transform:uppercase;
+    
+    
+}
+.video-offers{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.back-offers{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+/* section2 offers */
+.section-offimg{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image:url("/images/offers2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 2s;
+    padding-bottom: 50px;
+    box-shadow: 1px 1px 15px 55px #0e0f0f;
+    flex-direction: column;
+}
+
+.tabs{
+    display:flex;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size:1.3em;
+    text-align: center;
+    text-shadow: 0 0 15px #000, 0 0 18px #000;
+    letter-spacing: 3px;
+    
+}
+.tabs li{
+    padding: 40px;
+    background-color:#0e0f0f;
+    border-right: 0.4em solid orange;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 3em;
+}
+.tabs li.active,
+.tabs li:hover{
+    background-color:#26262695;
+}
+.content{
+    background-color:#444747a4;
+    font-size:1.5em;
+    color: white;
+    border-radius: 1em ;
+    border: 0.1em solid orange;
+    text-shadow: 0 0 15px #000, 0 0 18px #000;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.content>div{
+    padding: 10px;
+}
+.content>div:not(:first-child){
+    display:none;
+}
